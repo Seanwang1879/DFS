@@ -80,16 +80,16 @@ void DFS(ArrayGraph *G, int nums, int start)
 
 void main()
 {
-	ArrayGraph *G;
+	ArrayGraph G;
 	int nums;
 	int start;
 	
 	printf("please enter nums\n");
 	scanf("%d", &nums);
-	Init_G(G, nums);
-	Creat_G(G, nums);
+	Init_G(&G, nums);
+	Creat_G(&G, nums);
 
 	please("please enter start\n");
 	scanf("%d", &start);
-	DFS(G, nums, 2);
+	DFS(&G, nums, 2);
 }
